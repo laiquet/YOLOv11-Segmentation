@@ -52,3 +52,4 @@ Standardized_Images/
 *.cache
 *.npy
 plots/
+Plotting.ipynb
