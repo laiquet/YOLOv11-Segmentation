@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Model weights (too large for git, use GitHub Releases or Google Drive)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.mlmodel
+pretrained/
+
+# Training outputs
+train-seg/
+runs/
+
+# Dataset images & labels (share via Roboflow/Google Drive link in README)
+data/train/
+data/valid/
+data/test/
+data1/train/
+data1/valid/
+data1/test/
+yolov11_dataset/
+
+# Experiment tracking
+wandb/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test/sample images (optional — uncomment to include samples)
+# test/
+# samples/
+
+# Standardized images cache
+Standardized_Images/
+
+# Misc
+*.cache
+*.npy
+plots/

@@ -1,0 +1,13 @@
+train: data1/train/images
+val: data1/valid/images
+test: data1/test/images
+
+nc: 1
+names: ['spot']
+
+roboflow:
+  workspace: dlml-stuff-6s6vs
+  project: atlantic_salmon_spots-face-operculum
+  version: 27
+  license: CC BY 4.0
+  url: https://app.roboflow.com/dlml-stuff-6s6vs/atlantic_salmon_spots-face-operculum/27

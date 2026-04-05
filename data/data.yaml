@@ -1,0 +1,13 @@
+train: data/train/images
+val: data/valid/images
+test: data/test/images
+
+nc: 10
+names: ['anal-fin', 'body', 'caudal-fin', 'dorsal-fin', 'dorsal-fin-2', 'eye', 'head', 'pectoral-fin', 'pelvic-fin', 'roi']
+
+roboflow:
+  workspace: dlml-stuff-6s6vs
+  project: atlantic_salmon_rois
+  version: 7
+  license: CC BY 4.0
+  url: https://app.roboflow.com/dlml-stuff-6s6vs/atlantic_salmon_rois/7
