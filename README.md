@@ -252,6 +252,10 @@ Configured in [`data/hyps/hyp.scratch-high.yaml`](data/hyps/hyp.scratch-high.yam
 
 ## 🏗️ Architecture
 
+![YOLOv11 Architecture](yolov11_new_archi.png)
+
+> **Reference:** [YOLOv11 Explained — Next-Level Object Detection with Enhanced Speed and Accuracy](https://medium.com/@nikhil-rao-20/yolov11-explained-next-level-object-detection-with-enhanced-speed-and-accuracy-2dbe2d376f71) by Nikhil Rao
+
 ```
 YOLOv11x-seg  |  62.1M parameters  |  320.2 GFLOPs
 
@@ -322,8 +326,51 @@ This produces a **10-dimensional grayscale signature** per spot — useful for q
 
 ---
 
+
+
+## 🙏 Acknowledgments
+
+This project builds upon and is deeply inspired by the outstanding work of the open-source community. We gratefully acknowledge the following:
+
+### [Ultralytics YOLO](https://github.com/ultralytics/ultralytics)
+
+The code in this repository is **based on the [Ultralytics YOLO GitHub repository](https://github.com/ultralytics/ultralytics)**. The core model architecture, loss formulations, training loop, data loading, and inference pipelines are derived from and adapted from the Ultralytics codebase. Ultralytics has been instrumental in making state-of-the-art object detection and instance segmentation accessible to the research community.
+
+- **GitHub:** [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)
+- **Documentation:** [https://docs.ultralytics.com](https://docs.ultralytics.com)
+- **License:** AGPL-3.0
+
+If you use this work in your research, please also cite Ultralytics YOLO:
+
+```bibtex
+@software{yolo11_ultralytics,
+  author = {Glenn Jocher and Jing Qiu},
+  title = {Ultralytics YOLO11},
+  version = {11.0.0},
+  year = {2024},
+  url = {https://github.com/ultralytics/ultralytics},
+  license = {AGPL-3.0}
+}
+```
+
+### Dataset
+
+- **Atlantic Salmon Spots** — [Roboflow Universe](https://app.roboflow.com/dlml-stuff-6s6vs/atlantic_salmon_spots-face-operculum/27) (CC BY 4.0)
+
+### Libraries & Frameworks
+
+| Library | Purpose |
+|:--|:--|
+| [PyTorch](https://pytorch.org/) | Deep learning framework — training, inference, and DDP |
+| [OpenCV](https://opencv.org/) | Image I/O and preprocessing |
+| [NumPy](https://numpy.org/) | Vectorized numerical operations |
+| [Matplotlib](https://matplotlib.org/) & [Seaborn](https://seaborn.pydata.org/) | Plotting and statistical visualizations |
+| [Pandas](https://pandas.pydata.org/) | Tabular data processing for stress experiment exports |
+| [Pillow](https://python-pillow.org/) | Mask polygon rasterization |
+| [tqdm](https://tqdm.github.io/) | Progress bars |
+
+---
+
 ## 📜 License
 
-This project uses components from the [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) framework (AGPL-3.0).
-
-Dataset: [Atlantic Salmon Spots](https://app.roboflow.com/dlml-stuff-6s6vs/atlantic_salmon_spots-face-operculum/27) — CC BY 4.0
+This project uses components from the [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) framework and is distributed under the **AGPL-3.0** license. See the Ultralytics repository for full license terms.
